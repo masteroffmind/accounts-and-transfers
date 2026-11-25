@@ -58,6 +58,16 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
+        <!-- интеграционный модуль от Spring Boot, он возьмет на себя всю рутину по настройке flyway -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-flyway</artifactId>
+        </dependency>
+        <!-- Начиная с 10 версии FlyWay, поддержку конкретных бд вынесли в отдельные модули-->
+        <dependency>
+            <groupId>org.flywaydb</groupId>
+            <artifactId>flyway-database-postgresql</artifactId>
+        </dependency>
     </dependencies>
     <!-- 3. Плагин для сборки исполняемого JAR-файла и запуска приложения -->
     <build>
